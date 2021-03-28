@@ -1,0 +1,25 @@
+Proyecto OS
+simular el movimiento de tallo de la planta con colores
+proceso tallo-> cambiar colores gris y negro(1 a 10) 
+proceso hoja(independiente) -> Todos los colores(1 a 10)
+proceso rama -> verde y cafe(1 a 5)
+
+definir procesos como objetos y ejecutar paralelamente
+
+Interactiva
+
+Proceso del dibujo lee de un archivo de texto y borra, y el processo del input solo escribe
+
+Entrada de Texto
+
+Instrucciones:
+
+(P,1) Creo una planta id=1
+(P,1,3,9) Creo en planta 1, 3 ramas con 9hojas c/u 
+(P,1,1) planta 1, 1 ramas (eliminar las ramas para que quede 1 con todo y hojas)
+(P,1,4,5) planta 1, 5 ramas con 5hojas c/u (eliminado las hojas de la rama 1)
+(P,1,0) Planta 1 sin ramas
+(M,1) Muestra planta 1
+(I,1) Imprime Planta en archivo de texto con numero de procesos y el arbol de procesos
+
+

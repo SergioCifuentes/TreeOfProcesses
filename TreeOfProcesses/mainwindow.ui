@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1004</width>
+    <height>487</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>430</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ingresar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>430</y>
+      <width>521</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="history">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>151</width>
+      <height>361</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>131</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Utimos Comandos</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>731</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QMdiArea" name="tierra">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>310</y>
+       <width>731</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>115</red>
+        <green>210</green>
+        <blue>22</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="tronco">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>19</y>
+       <width>51</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>136</red>
+        <green>138</green>
+        <blue>133</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="rama2">
+     <property name="geometry">
+      <rect>
+       <x>99</x>
+       <y>90</y>
+       <width>211</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>143</red>
+        <green>89</green>
+        <blue>2</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="rama1">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>60</y>
+       <width>211</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>143</red>
+        <green>89</green>
+        <blue>2</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="rama3">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>150</y>
+       <width>211</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>143</red>
+        <green>89</green>
+        <blue>2</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="rama4">
+     <property name="geometry">
+      <rect>
+       <x>99</x>
+       <y>190</y>
+       <width>211</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>143</red>
+        <green>89</green>
+        <blue>2</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="rama5">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>250</y>
+       <width>211</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>143</red>
+        <green>89</green>
+        <blue>2</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja11">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>80</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja12">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>30</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja13">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>80</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja14">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>30</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja15">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>80</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja16">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>30</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja17">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>80</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja18">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>30</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja19">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>80</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja110">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>30</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja29">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>60</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja23">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>60</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja25">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>60</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja27">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>60</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja21">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>60</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja210">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>110</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja22">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>110</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja28">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>110</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja26">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>110</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja24">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>110</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja31">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>120</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja35">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>120</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja39">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>120</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja33">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>120</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja37">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>120</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja32">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>170</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja38">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>170</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja310">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>170</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja36">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>170</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja34">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>170</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja49">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>160</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja45">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>160</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja47">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>160</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja41">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>160</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja43">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>160</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja410">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>210</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja44">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>210</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja42">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>210</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja48">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>210</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja46">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>210</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja51">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>220</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja59">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>220</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja55">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>220</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja57">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>220</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja53">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>220</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja52">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>270</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja58">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>270</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja56">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>270</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja54">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>270</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QMdiArea" name="hoja510">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>270</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>78</red>
+        <green>154</green>
+        <blue>6</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
