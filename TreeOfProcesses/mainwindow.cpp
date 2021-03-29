@@ -221,6 +221,63 @@ void MainWindow::onNuevoColor(int color,int rama,int hoja){
             if(rama==4)ui->rama4->setBackground(QBrush(QColor(colorChar)));
             if(rama==5)ui->rama5->setBackground(QBrush(QColor(colorChar)));
         }
+    }else{
+        if(rama==1){
+            if(hoja==1)ui->hoja11->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==2)ui->hoja12->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==3)ui->hoja13->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==4)ui->hoja14->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==5)ui->hoja15->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==6)ui->hoja16->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==7)ui->hoja17->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==8)ui->hoja18->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==9)ui->hoja19->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==10)ui->hoja110->setBackground(QBrush(QColor(colorChar)));
+        }else if(rama==2){
+            if(hoja==1)ui->hoja21->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==2)ui->hoja22->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==3)ui->hoja23->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==4)ui->hoja24->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==5)ui->hoja25->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==6)ui->hoja26->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==7)ui->hoja27->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==8)ui->hoja28->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==9)ui->hoja29->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==10)ui->hoja210->setBackground(QBrush(QColor(colorChar)));
+        }else if(rama==3){
+            if(hoja==1)ui->hoja31->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==2)ui->hoja32->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==3)ui->hoja33->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==4)ui->hoja34->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==5)ui->hoja35->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==6)ui->hoja36->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==7)ui->hoja37->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==8)ui->hoja38->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==9)ui->hoja39->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==10)ui->hoja310->setBackground(QBrush(QColor(colorChar)));
+        }else if(rama==4){
+            if(hoja==1)ui->hoja41->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==2)ui->hoja42->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==3)ui->hoja43->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==4)ui->hoja44->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==5)ui->hoja45->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==6)ui->hoja46->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==7)ui->hoja47->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==8)ui->hoja48->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==9)ui->hoja49->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==10)ui->hoja410->setBackground(QBrush(QColor(colorChar)));
+        }else if(rama==5){
+            if(hoja==1)ui->hoja51->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==2)ui->hoja52->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==3)ui->hoja53->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==4)ui->hoja54->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==5)ui->hoja55->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==6)ui->hoja56->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==7)ui->hoja57->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==8)ui->hoja58->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==9)ui->hoja59->setBackground(QBrush(QColor(colorChar)));
+            if(hoja==10)ui->hoja510->setBackground(QBrush(QColor(colorChar)));
+        }
     }
 
 
