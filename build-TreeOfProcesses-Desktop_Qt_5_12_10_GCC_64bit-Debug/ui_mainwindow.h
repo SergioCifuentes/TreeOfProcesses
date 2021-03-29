@@ -112,7 +112,7 @@ public:
         label->setGeometry(QRect(10, 20, 131, 17));
         frame = new QFrame(centralwidget);
         frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(170, 30, 731, 371));
+        frame->setGeometry(QRect(160, 20, 731, 371));
         frame->setAutoFillBackground(true);
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
