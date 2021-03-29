@@ -35,15 +35,39 @@ void ThreadLeer::run(){
                     stringstream geek(myText);
                     int x = 0;
                         geek >> x;
-                        qDebug("Color--");
+
                     emit NuevoColor(x,0,0);
                 }
 
             }
+            for(int i=1;i<=5;i++){
+                qDebug("IIIII");
+                string myText="";
+                std::ostringstream s;
+                 s<< "Planta"<<planta<<"/Rama"<<planta<<"_"<<i<<"/color";
+                 std:: string plantaFileColor(s.str());
 
-                this->sleep(1);
+                // Read from the text file
+                ifstream MyReadFile;
+                        MyReadFile.open(plantaFileColor);
+                if(MyReadFile){
+                    while (getline (MyReadFile, myText)) {
+                      // Output the text from the file
+                      cout << myText;
+                    }
+                    if(myText.length()>0){
+                        stringstream geek(myText);
+                        int x = 0;
+                            geek >> x;
+                            qDebug("Color--");
+                        emit NuevoColor(x,i,0);
+                    }
+
+                }
+            }
+                this->msleep(500);
         }
 
-        this->sleep(1);
+        this->msleep(500);
     }
 }

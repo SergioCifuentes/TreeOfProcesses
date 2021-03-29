@@ -14,6 +14,7 @@ class rama {     // The class
 private:
     int id=0;
     int p;
+    int  sleepTime = 1;
 
     void crearCarpteta(string nombrePlanta,string nombreRama){
         std::ostringstream s2;
@@ -55,6 +56,9 @@ private:
               }
               hojas[i]=hoja(i+1,idPlanta,id,nombrePlanta,processName);
           }
+           sleepTime =2+ rand() % 9;
+           srand ( time(NULL) );
+           qDebug("Rama sleepTime%d",sleepTime);
           cambiarColor(nombrePlanta,processName);
 
           sleep(10);
@@ -74,7 +78,7 @@ private:
             file << colorActual;
             file.close();
             colorActual=getRgbRama(colorActual);
-            sleep(5);
+            sleep(sleepTime);
         }
     }
     rama() {     // Constructor

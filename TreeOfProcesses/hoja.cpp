@@ -11,7 +11,7 @@ class hoja {     // The class
 private:
     int id=0;
     int p;
-
+    int sleepTime=1;
     void crearCarpteta(string nombrePlanta,string nombreRama,string nombreHoja){
         std::ostringstream s2;
         s2<< nombrePlanta<<"/"<<nombreRama<<"/"<<nombreHoja;
@@ -47,6 +47,7 @@ private:
             strcpy(processNameChar, processName.c_str());
             crearCarpteta(nombrePlanta,nombreRama,processName);
           prctl(PR_SET_NAME,processNameChar,NULL,NULL,NULL);
+           sleepTime = rand() % 10 + 2;
           cambiarColor(nombrePlanta,nombreRama, processName);
 
           sleep(10);
@@ -61,7 +62,7 @@ private:
             file << colorActual;
             file.close();
             colorActual=getRgbHoja(colorActual);
-            sleep(5);
+            sleep(sleepTime);
         }
     }
     hoja() {     // Constructor

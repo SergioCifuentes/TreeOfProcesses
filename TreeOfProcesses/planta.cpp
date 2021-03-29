@@ -13,6 +13,7 @@ class planta {     // The class
 private:
     int id=0;
     int p;
+    int sleepTime=1;
 
     void    crearCarpteta(string nombrePlanta){
         std::ostringstream s2;
@@ -53,6 +54,9 @@ private:
 
               ramas[i]=rama(i+1,numeroHojas,id,processName);
           }
+          sleepTime =2+ rand() % 10 ;
+          srand ( time(NULL) );
+          qDebug("Planta sleepTime%d",sleepTime);
           cambiarColor(processName);
 
           sleep(10);
@@ -67,7 +71,7 @@ private:
             file << colorActual;
             file.close();
             colorActual=getRgbTronco(colorActual);
-            sleep(5);
+            sleep(sleepTime);
         }
     }
     planta() {     // Constructor

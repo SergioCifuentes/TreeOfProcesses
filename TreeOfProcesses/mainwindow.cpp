@@ -206,13 +206,20 @@ if (started==false){
 void MainWindow::onNuevoColor(int color,int rama,int hoja){
     qDebug("Entrando %d\n",color);
     string nombreColor = convertint(color);
+    int n2 = nombreColor.length();
+            char colorChar[n2 + 1];
+            strcpy(colorChar, nombreColor.c_str());
 
     if(hoja==0){
         if(rama==0){
-            int n2 = nombreColor.length();
-                    char colorChar[n2 + 1];
-                    strcpy(colorChar, nombreColor.c_str());
+
                     ui->tronco->setBackground(QBrush(QColor(colorChar)));
+        }else{
+            if(rama==1)ui->rama1->setBackground(QBrush(QColor(colorChar)));
+            if(rama==2)ui->rama2->setBackground(QBrush(QColor(colorChar)));
+            if(rama==3)ui->rama3->setBackground(QBrush(QColor(colorChar)));
+            if(rama==4)ui->rama4->setBackground(QBrush(QColor(colorChar)));
+            if(rama==5)ui->rama5->setBackground(QBrush(QColor(colorChar)));
         }
     }
 
