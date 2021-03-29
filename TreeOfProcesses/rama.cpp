@@ -40,10 +40,7 @@ private:
     rama(int idRama,int numeroHojas,int idPlanta,std::string nombrePlanta) {     // Constructor
       id=idRama;
       p=fork();
-
       if(p==0){
-
-
         std::ostringstream s;
          s<< "Rama"<<idPlanta<<"_"<<id;
             std:: string processName(s.str());

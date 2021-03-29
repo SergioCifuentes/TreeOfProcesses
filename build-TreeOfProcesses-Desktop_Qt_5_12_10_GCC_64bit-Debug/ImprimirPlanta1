@@ -1,0 +1,6 @@
+        |         |             |-qtcreator-+-TreeOfProcesses-+-Planta1-+-Rama1_1-+-Hoja1_1_1
+        |         |             |           |                 |         |         |-Hoja1_1_2
+        |         |             |           |                 |         |         `-Hoja1_1_3
+        |         |             |           |                 |         `-Rama1_2-+-Hoja1_2_1
+        |         |             |           |                 |                   |-Hoja1_2_2
+        |         |             |           |                 |                   `-Hoja1_2_3

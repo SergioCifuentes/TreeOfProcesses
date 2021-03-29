@@ -16,6 +16,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    void ocultar();
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     ThreadLeer *threadLeer;

@@ -38,10 +38,7 @@ private:
     hoja(int idhoja,int idPlanta, int idRama,std::string nombrePlanta,std::string nombreRama) {     // Constructor
       id=idhoja;
       p=fork();
-
       if(p==0){
-
-
         std::ostringstream s;
          s<< "Hoja"<<idPlanta<<"_"<<idRama<<"_"<<id;
             std:: string processName(s.str());

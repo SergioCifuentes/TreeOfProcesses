@@ -126,7 +126,8 @@ public:
         tronco = new QMdiArea(frame);
         tronco->setObjectName(QString::fromUtf8("tronco"));
         tronco->setGeometry(QRect(310, 19, 51, 291));
-        QBrush brush1(QColor(136, 138, 133, 255));
+        tronco->setAutoFillBackground(false);
+        QBrush brush1(QColor(0, 0, 0, 255));
         brush1.setStyle(Qt::SolidPattern);
         tronco->setBackground(brush1);
         rama2 = new QMdiArea(frame);

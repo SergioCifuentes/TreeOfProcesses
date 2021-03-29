@@ -14,7 +14,7 @@ private:
     int id=0;
     int p;
 
-    void crearCarpteta(string nombrePlanta){
+    void    crearCarpteta(string nombrePlanta){
         std::ostringstream s2;
         s2<< nombrePlanta;
         std:: string carpeta(s2.str());

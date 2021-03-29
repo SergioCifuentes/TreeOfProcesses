@@ -1117,6 +1117,7 @@ mainwindow.o: ../TreeOfProcesses/mainwindow.cpp ../TreeOfProcesses/mainwindow.h 
 		/home/sergio/Qt5.12.10/5.12.10/gcc_64/include/QtWidgets/qtextedit.h \
 		/home/sergio/Qt5.12.10/5.12.10/gcc_64/include/QtGui/qtextdocument.h \
 		/home/sergio/Qt5.12.10/5.12.10/gcc_64/include/QtWidgets/QWidget \
+		../TreeOfProcesses/Imprimir.cpp \
 		/home/sergio/Qt5.12.10/5.12.10/gcc_64/include/QtGui/QColor
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../TreeOfProcesses/mainwindow.cpp
 

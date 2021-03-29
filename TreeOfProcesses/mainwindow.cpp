@@ -2,7 +2,7 @@
 #include "planta.cpp"
 #include "ui_mainwindow.h"
 #include "threadleer.h"
-
+#include "Imprimir.cpp"
 #include <iostream>
 #include<sstream>
 #include <QDebug>
@@ -21,7 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
     threadLeer= new ThreadLeer(this);
     qDebug("coneccion Creada");
     connect(threadLeer,SIGNAL(NuevoColor(int,int,int)),this,SLOT(onNuevoColor(int,int,int)));
-
+ocultar();
 }
 
 MainWindow::~MainWindow()
@@ -34,7 +34,70 @@ void MainWindow::paintEvent(QPaintEvent *event){
     QPainter painter(this);
 }
 
+void MainWindow::ocultar(){
+   ui->tronco->setBackground(QBrush(QColor(238,238,236)));
+   ui->rama1->setBackground(QBrush(QColor(238,238,236)));
+   ui->rama2->setBackground(QBrush(QColor(238,238,236)));
+   ui->rama3->setBackground(QBrush(QColor(238,238,236)));
+   ui->rama4->setBackground(QBrush(QColor(238,238,236)));
+   ui->rama5->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja11->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja12->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja13->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja14->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja15->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja16->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja17->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja18->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja19->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja110->setBackground(QBrush(QColor(238,238,236)));
 
+   ui->hoja21->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja22->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja23->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja24->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja25->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja26->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja27->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja28->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja29->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja210->setBackground(QBrush(QColor(238,238,236)));
+
+   ui->hoja31->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja32->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja33->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja34->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja35->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja36->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja37->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja38->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja39->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja310->setBackground(QBrush(QColor(238,238,236)));
+
+   ui->hoja41->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja42->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja43->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja44->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja45->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja46->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja47->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja48->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja49->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja410->setBackground(QBrush(QColor(238,238,236)));
+
+   ui->hoja51->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja52->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja53->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja54->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja55->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja56->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja57->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja58->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja59->setBackground(QBrush(QColor(238,238,236)));
+   ui->hoja510->setBackground(QBrush(QColor(238,238,236)));
+
+
+}
 void MainWindow::on_pushButton_clicked()
 {
 
@@ -53,7 +116,6 @@ void MainWindow::on_pushButton_clicked()
 
     //QString s=QString::fromStdString(op);
     if(result.at(0).substr(1,1)=="P"){
-        qDebug("P");
         int hojas=0;
         int ramas=0;
         int id=0;
@@ -103,7 +165,6 @@ void MainWindow::on_pushButton_clicked()
 
     }else if(result.at(0).substr(1,1)=="M"){
         int id;
-        qDebug("M");
         vector<string> result2;
         stringstream s_stream(result.at(1)); //create string stream from the string
         while(s_stream.good()) {
@@ -117,7 +178,20 @@ void MainWindow::on_pushButton_clicked()
 
 
     }else if(result.at(0).substr(1,1)=="I"){
-        qDebug("II");
+        int id;
+        vector<string> result2;
+        stringstream s_stream(result.at(1)); //create string stream from the string
+        while(s_stream.good()) {
+           string substr;
+           getline(s_stream, substr, ')'); //get first string delimited by comma
+           result2.push_back(substr);
+        }
+        stringstream geek(result2.at(0));
+        geek >> id;
+        imprimirEstado(id);
+
+
+
 
     }else{
         qDebug("Error");
@@ -144,3 +218,4 @@ void MainWindow::onNuevoColor(int color,int rama,int hoja){
 
 
 }
+
